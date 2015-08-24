@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ten-Km-d9R">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Happiness View Controller-->
+        <scene sceneID="ol8-7r-ENf">
+            <objects>
+                <viewController id="ten-Km-d9R" customClass="HappinessViewController" customModule="Happiness" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZQn-uN-99V"/>
+                        <viewControllerLayoutGuide type="bottom" id="6Xw-eM-d28"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="srw-Or-ROG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="nME-Lt-Bfb" customClass="FaceView" customModule="Happiness" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="620"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="nME-Lt-Bfb" secondAttribute="bottom" constant="-20" id="3Re-7R-AU6"/>
+                            <constraint firstAttribute="trailing" secondItem="nME-Lt-Bfb" secondAttribute="trailing" id="dpJ-1H-YO0"/>
+                            <constraint firstItem="nME-Lt-Bfb" firstAttribute="leading" secondItem="srw-Or-ROG" secondAttribute="leading" id="w1g-6Q-Sfw"/>
+                            <constraint firstItem="nME-Lt-Bfb" firstAttribute="top" secondItem="ZQn-uN-99V" secondAttribute="bottom" constant="-20" id="zuw-DG-fM6"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QCm-Ih-Pru" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="333" y="326"/>
+        </scene>
+    </scenes>
+</document>
